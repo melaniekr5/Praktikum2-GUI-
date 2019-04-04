@@ -1,0 +1,204 @@
+Microsoft Windows [Version 10.0.17134.523]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\HP>python
+Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)] :: Anaconda, Inc. on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> pins = {"Afandi":1234,"Gita":1111, "Rifky":2222}
+>>> pins[0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 0
+>>> pins["Afandi"]
+1234
+>>> type(pins=["Gita"])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: type() takes 1 or 3 arguments
+>>> type(pins["Gita"])
+<class 'int'>
+>>> pins.key()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'dict' object has no attribute 'key'
+>>> pins.keys()
+dict_keys(['Afandi', 'Gita', 'Rifky'])
+>>> pins.values()
+dict_values([1234, 1111, 2222])
+>>> pins["Nia"}
+  File "<stdin>", line 1
+    pins["Nia"}
+              ^
+SyntaxError: invalid syntax
+>>> pins["Nia"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'Nia'
+>>> pins["Nia"]=3333
+>>> pins
+{'Afandi': 1234, 'Gita': 1111, 'Rifky': 2222, 'Nia': 3333}
+>>> pins.pop("Rifky")
+2222
+>>> pins
+{'Afandi': 1234, 'Gita': 1111, 'Nia': 3333}
+>>> pins["Elok"]=AB123
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'AB123' is not defined
+>>> pins["Elok"]='AB123'
+>>> pins
+{'Afandi': 1234, 'Gita': 1111, 'Nia': 3333, 'Elok': 'AB123'}
+>>> masukan = input ("Masukkan Nama Anda : ")
+Masukkan Nama Anda : Melani
+>>> bilangan=input("Masukkan Angka : )
+  File "<stdin>", line 1
+    bilangan=input("Masukkan Angka : )
+                                     ^
+SyntaxError: EOL while scanning string literal
+>>> bilangan=input("Masukkan Angka : ")
+Masukkan Angka : 70
+>>> print (bilangan)
+70
+>>> print(masukkan)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'masukkan' is not defined
+>>> print(masukan)
+Melani
+>>> print (bilangan**2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'int'
+>>> type(masukan)
+<class 'str'>
+>>> bilangan=(int(input(masukkan angka : "))
+  File "<stdin>", line 1
+    bilangan=(int(input(masukkan angka : "))
+                                     ^
+SyntaxError: invalid syntax
+>>> bilangan=(int(input("masukkan angka : "))
+... bilangan=int(input("masukkan angka : "))
+  File "<stdin>", line 2
+    bilangan=int(input("masukkan angka : "))
+           ^
+SyntaxError: invalid syntax
+>>> bilangan=int(input("masukkan angka : "))
+masukkan angka : 99
+>>> type(bilangan)
+<class 'int'>
+>>> print(bilangan**2)
+9801
+>>> bilangan=float(input(masukkan angka : "))
+  File "<stdin>", line 1
+    bilangan=float(input(masukkan angka : "))
+                                      ^
+SyntaxError: invalid syntax
+>>> bilangan=float(input("masukkan angka : "))
+masukkan angka : 23
+>>> print(bilangan/2)
+11.5
+>>> pins
+{'Afandi': 1234, 'Gita': 1111, 'Nia': 3333, 'Elok': 'AB123'}
+>>> pin.values()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'pin' is not defined
+>>> pins.values()
+dict_values([1234, 1111, 3333, 'AB123'])
+>>> kode=1234
+>>> pin in pin.values()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'pin' is not defined
+>>> pin in pins.values()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'pin' is not defined
+>>> kode in pins.values()
+True
+>>> kode=2222
+>>> kode in pins.values()
+False
+>>> if 1<5;
+  File "<stdin>", line 1
+    if 1<5;
+          ^
+SyntaxError: invalid syntax
+>>> if 1<5:
+...     print("yes")
+... else:
+...     print("no")
+...
+yes
+>>> if 1==5;
+  File "<stdin>", line 1
+    if 1==5;
+           ^
+SyntaxError: invalid syntax
+>>> if 1==5:
+...     print("benar")
+... else:
+...     print("salah")
+...
+salah
+>>> user_input=float(input("Masukkan Angka : "))
+Masukkan Angka : 88
+>>> if user_input>100:
+...     print("Greater")
+... else:
+...     print("Smaller")
+...
+Smaller
+>>> if user_input >100:
+...     print("Lebih Besar")
+... )
+  File "<stdin>", line 3
+    )
+    ^
+SyntaxError: invalid syntax
+>>> elif user_input==100:
+  File "<stdin>", line 1
+    elif user_input==100:
+       ^
+SyntaxError: invalid syntax
+>>> :
+  File "<stdin>", line 1
+    :
+    ^
+SyntaxError: invalid syntax
+>>> if user_input >100:
+...     print("Lebih Besar")
+... elif user_input==100:
+...     print("sama dengan")
+... else:
+...     print("lebih kecil")
+...
+lebih kecil
+>>> if user_input >100:
+...     print("Lebih Besar")
+... elif user_input==100:
+...     print("sama dengan")
+... else:
+...     print("lebih kecil")
+...
+lebih kecil
+>>> def printing():
+...     print("Hello")
+...     print("Dunia")
+...
+>>> printing()
+Hello
+Dunia
+>>> def luas_persegi(sisi):
+...     luas=sisi*sisi
+...     return luas
+...
+>>> luas_persegi(6)
+36
+>>> def luas_segitiga(alas,tinggi):
+...     luas=(alas*tinggi)/2
+...     print ("Luas segitiga : %d"%luas)
+...
+>>> luas_segitiga(100,50)
+Luas segitiga : 2500
+>>>
